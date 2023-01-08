@@ -2,12 +2,22 @@
 
 namespace CodeBlogFitness.BL.Model
 {
-    //Пол
+    /// <summary>
+    /// Пол.
+    /// </summary>
+    [Serializable]
     public class Gender
     {
-        //Название
+        /// <summary>
+        /// Название.
+        /// </summary>
+        
         public string Name { get; }
-        //Создать новый пол
+        /// <summary>
+        /// Создать новый пол.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <exception cref="ArgumentException"></exception>
         public Gender (string name)
         {
             if (string.IsNullOrWhiteSpace(name))
